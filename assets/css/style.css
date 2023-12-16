@@ -101,13 +101,38 @@ h6 {
 
 @media (max-width: 768px) {
   #header .logo h1 {
-    font-size: 20px;
+    font-size: 10px;
 
   }
+ 
+    .mobile-nav-toggle {
+      display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+      color: #000;
+      cursor: pointer;
+    
+  }
+
+
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 200px)and (max-width: 950px) {
+ #header .navbar .mobile-nav-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #BB8357;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
   #header .logo h1 {
     font-size: 15px;
   }
@@ -623,6 +648,7 @@ section {
   }
 
   .breadcrumbs ol {
+    text-align: right;
     display: block;
   }
 
