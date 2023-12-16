@@ -123,6 +123,23 @@
             line-height: 2.0;
             font-size: 15px;
         }
+
+
+    .mobile-nav-toggle {
+  display: none;
+}
+
+@media (min-width: 200px)and (max-width: 950px) {
+  .mobile-nav-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #BB8357;
+    cursor: pointer;
+  }
+}
     </style>
 </head>
 
@@ -177,7 +194,7 @@
                     </li>
                     <!-- <li><a class="nav-link scrollto" href="#contact">تواصل بنا</a></li> -->
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
+                <i dir="ltr" class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
         </div>
