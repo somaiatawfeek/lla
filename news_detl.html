@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>الخدمات</title>
+  <title>العبري</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -14,9 +14,15 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -26,17 +32,80 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+  <!-- Libraries Stylesheet -->
+  <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
+
 
   <style>
     p {
       text-align: right
     }
+
+
+    .circle-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    .circle-image img {
+      width: 100px;
+      height: 100px;
+      /* border-radius: 50%; */
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-title {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .testimonial-item {
+      margin-right: 0;
+    }
+
+
+    .mobile-nav-toggle {
+  display: none;
+}
+
+@media (min-width: 200px)and (max-width: 950px) {
+  .mobile-nav-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+  }
+}
   </style>
+
 </head>
 
 <body dir="rtl">
+  
+<!-- Spinner Start -->
+<!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">تحميل </span>
+  </div>
+</div> -->
+<!-- Spinner End -->
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -77,19 +146,21 @@
                 </ul>
               </li> -->
               <li><a href="#">من نحن</a></li>
-              <li><a href="#"> خدماتنا</a></li>
-              <li><a href="#">اخبارنا</a></li>
-              <li><a href="#">شركاونا</a></li>
-              <li><a href="#">عملائنا</a></li>
+              <li><a href="services.html"> خدماتنا</a></li>
+              <li><a href="news.html">اخبارنا</a></li>
+              <li><a href="#par">شركاونا</a></li>
+              <li><a href="#cost">عملائنا</a></li>
             </ul>
           </li>
           <!-- <li><a class="nav-link scrollto" href="#contact">تواصل بنا</a></li> -->
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i dir="ltr" class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
+
+
 
   <main id="main">
 
